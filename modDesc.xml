@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="111" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>MaxKra1985</author>
+    <version>0.10.2.1</version>
+
+	<title>
+		<en>Construction Progress Display</en>
+		<ru>Стенд прогресса строительства</ru>
+	</title>
+
+	<description>
+		<en><![CDATA[Construction progress stand. Shows nearby constructible sites, construction stages, material consumption/storage/supply, responsible party and the selected object's store image.]]></en>
+		<ru><![CDATA[Стенд прогресса строительства. Показывает ближайшие стройплощадки, этапы работ, расход/остаток/обеспечение материалами, ответственного и магазинное изображение выбранного объекта.]]></ru>
+	</description>
+
+	<iconFilename>icon.dds</iconFilename>
+	<multiplayer supported="true"/>
+
+	<l10n>
+		<text name="storeItem_constructionProgressDisplay">
+			<en>Construction Progress Stand</en>
+			<ru>Стенд прогресса строительства</ru>
+		</text>
+		<text name="function_constructionProgressDisplay">
+			<en>Physical information stand for construction progress.</en>
+			<ru>Физический информационный стенд для отображения прогресса строительства.</ru>
+		</text>
+		<text name="warning_constructionProgressDisplay_noConstructionSiteNearby">
+			<en>No construction site found nearby</en>
+			<ru>Поблизости нет стройплощадки</ru>
+		</text>
+		<text name="warning_constructionProgressDisplay_noActiveConstructionSiteNearby">
+			<en>No active construction site found nearby</en>
+			<ru>Поблизости нет активных стройплощадок</ru>
+		</text>
+		<text name="cpd_test_title"><en>CONSTRUCTION PROGRESS REPORT</en><ru>ОТЧЁТ О ХОДЕ СТРОИТЕЛЬСТВА</ru></text>
+		<text name="cpd_test_cyrillic1"><en>CYRILLIC TEST: АБВГДЕЁЖЗИЙКЛМНО</en><ru>КИРИЛЛИЦА: АБВГДЕЁЖЗИЙКЛМНО</ru></text>
+		<text name="cpd_test_cyrillic2"><en>ПРСТУФХЦЧШЩЪЫЬЭЮЯ</en><ru>ПРСТУФХЦЧШЩЪЫЬЭЮЯ</ru></text>
+		<text name="cpd_test_latin"><en>CPD WORLD TEXT 1234567890</en><ru>CPD WORLD TEXT 1234567890</ru></text>
+		<text name="cpd_test_object"><en>OBJECT: TEST CONSTRUCTION SITE</en><ru>ОБЪЕКТ: ТЕСТОВАЯ СТРОЙПЛОЩАДКА</ru></text>
+		<text name="cpd_test_status"><en>STAGE: 3 / 24     PROGRESS: 42%</en><ru>ЭТАП: 3 / 24     ГОТОВНОСТЬ: 42%</ru></text>
+		<text name="cpd_test_tableHeader"><en>MATERIAL     CONSUMED     STORED</en><ru>МАТЕРИАЛ     ПОТРЕБЛЕНО     ХРАНИТСЯ</ru></text>
+		<text name="cpd_test_tableRow1"><en>WOOD             1250        750</en><ru>ДЕРЕВО            1250        750</ru></text>
+		<text name="cpd_test_tableRow2"><en>CEMENT             500       1000</en><ru>ЦЕМЕНТ             500       1000</ru></text>
+		<text name="cpd_test_responsible"><en>RESPONSIBLE: Lizarrd building inc</en><ru>ОТВЕТСТВЕННЫЙ: Lizarrd building inc</ru></text>
+		<text name="cpd_report_title"><en>CONSTRUCTION SITE REPORT</en><ru>СТРОИТЕЛЬНЫЙ ПАСПОРТ ОБЪЕКТА</ru></text>
+		<text name="cpd_report_object"><en>Object</en><ru>Объект</ru></text>
+		<text name="cpd_report_stage"><en>Work stage</en><ru>Этап работ</ru></text>
+		<text name="cpd_report_progress"><en>Progress</en><ru>Готовность</ru></text>
+		<text name="cpd_report_overallProgress"><en>OVERALL PROGRESS</en><ru>ОБЩАЯ ГОТОВНОСТЬ</ru></text>
+		<text name="cpd_report_currentStage"><en>CURRENT STAGE</en><ru>ТЕКУЩИЙ ЭТАП</ru></text>
+		<text name="cpd_report_stageNumberPrefix"><en>Stage No. </en><ru>Этап №</ru></text>
+		<text name="cpd_report_status"><en>Status</en><ru>Статус</ru></text>
+		<text name="cpd_report_statusActive"><en>construction in progress</en><ru>ведётся строительство</ru></text>
+		<text name="cpd_report_statusComplete"><en>construction complete</en><ru>строительство завершено</ru></text>
+		<text name="cpd_report_objectsInRange"><en>Sites in range</en><ru>Объектов в зоне</ru></text>
+		<text name="cpd_report_materials"><en>MATERIALS AND SUPPLY, L</en><ru>МАТЕРИАЛЫ И ОБЕСПЕЧЕНИЕ, Л</ru></text>
+		<text name="cpd_report_colMaterial"><en>Material</en><ru>Материал</ru></text>
+		<text name="cpd_report_colConsumed"><en>Consumed</en><ru>Потреблено</ru></text>
+		<text name="cpd_report_colStored"><en>Stored</en><ru>Хранится</ru></text>
+		<text name="cpd_report_colSupplied"><en>Total</en><ru>Всего</ru></text>
+		<text name="cpd_report_colRequired"><en>Need total</en><ru>Нужно всего</ru></text>
+		<text name="cpd_report_colBalance"><en>Balance</en><ru>Баланс</ru></text>
+		<text name="cpd_report_responsible"><en>Responsible</en><ru>Ответственный</ru></text>
+		<text name="cpd_report_owner"><en>Owner</en><ru>Владелец</ru></text>
+		<text name="cpd_report_signature"><en>signature</en><ru>подпись</ru></text>
+		<text name="cpd_report_roundingNote"><en>Stage material amounts are rounded upward for the construction report.</en><ru>Объёмы материалов каждой стадии округляются вверх для строительной ведомости.</ru></text>
+		<text name="cpd_report_stages"><en>CONSTRUCTION STAGES</en><ru>ЭТАПЫ СТРОИТЕЛЬСТВА</ru></text>
+		<text name="cpd_report_materialNeed"><en>Need</en><ru>Нужно</ru></text>
+		<text name="cpd_report_materialTotal"><en>Total</en><ru>Всего</ru></text>
+		<text name="cpd_report_materialProgress"><en>Progress</en><ru>Прогресс</ru></text>
+		<text name="cpd_report_consumedShort"><en>cons.</en><ru>потр.</ru></text>
+		<text name="cpd_report_storedShort"><en>stored</en><ru>хран.</ru></text>
+		<text name="cpd_report_imagePlaceholder"><en>OBJECT IMAGE</en><ru>ИЗОБРАЖЕНИЕ ОБЪЕКТА</ru></text>
+		<text name="cpd_report_autoNote"><en>Data updated automatically</en><ru>Данные обновляются автоматически</ru></text>
+		<text name="cpd_report_noTargetsTitle"><en>NO CONSTRUCTION SITES FOUND</en><ru>СТРОИТЕЛЬНЫЕ ОБЪЕКТЫ НЕ НАЙДЕНЫ</ru></text>
+		<text name="cpd_report_noTargetsLine1"><en>No available construction sites</en><ru>В зоне действия стенда</ru></text>
+		<text name="cpd_report_noTargetsLine2"><en>within the stand range.</en><ru>нет доступных стройплощадок.</ru></text>
+		<text name="cpd_report_stagePageHint"><en>LMB: next page</en><ru>ЛКМ: листать</ru></text>
+		<text name="cpd_report_materialPageHint"><en>RMB: next page</en><ru>ПКМ: листать</ru></text>
+		<text name="input_CPD_NEXT_STAGE_PAGE"><en>Next construction-stage page</en><ru>Следующая страница этапов</ru></text>
+		<text name="input_CPD_NEXT_MATERIAL_PAGE"><en>Next materials page</en><ru>Следующая страница материалов</ru></text>
+		<text name="input_CPD_NEXT_CONSTRUCTION"><en>Next construction-site tab</en><ru>Следующая вкладка стройплощадки</ru></text>
+	</l10n>
+
+	<actions>
+		<action name="CPD_NEXT_CONSTRUCTION" category="PLAYER" axisType="HALF"/>
+		<action name="CPD_NEXT_STAGE_PAGE" category="PLAYER" axisType="HALF"/>
+		<action name="CPD_NEXT_MATERIAL_PAGE" category="PLAYER" axisType="HALF"/>
+	</actions>
+
+	<inputBinding>
+		<actionBinding action="CPD_NEXT_CONSTRUCTION">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_r"/>
+		</actionBinding>
+		<actionBinding action="CPD_NEXT_STAGE_PAGE">
+			<binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT"/>
+		</actionBinding>
+		<actionBinding action="CPD_NEXT_MATERIAL_PAGE">
+			<binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_RIGHT"/>
+		</actionBinding>
+	</inputBinding>
+
+	<storeItems>
+		<storeItem xmlFilename="placeables/constructionProgressDisplay/constructionProgressDisplay.xml"/>
+	</storeItems>
+
+	<placeableTypes>
+		<type name="constructionProgressDisplay" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="constructionProgressDisplay"/>
+		</type>
+	</placeableTypes>
+
+	<placeableSpecializations>
+		<specialization name="constructionProgressDisplay" className="ConstructionProgressDisplay" filename="scripts/ConstructionProgressDisplay.lua"/>
+	</placeableSpecializations>
+</modDesc>

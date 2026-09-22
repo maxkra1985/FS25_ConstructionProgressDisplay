@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<placeable type="constructionProgressDisplay" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+	<storeData>
+		<name>$l10n_storeItem_constructionProgressDisplay</name>
+		<functions>
+			<function>$l10n_function_constructionProgressDisplay</function>
+		</functions>
+		<image>store_constructionProgressDisplay.dds</image>
+		<price>500</price>
+		<dailyUpkeep>0</dailyUpkeep>
+		<lifetime>1000</lifetime>
+		<rotation>0</rotation>
+		<brand>NONE</brand>
+		<species>PLACEABLE</species>
+		<category>placeableMisc</category>
+		<brush>
+			<type>placeable</type>
+			<category>buildings</category>
+			<tab>tools</tab>
+		</brush>
+		<canBeSold>true</canBeSold>
+		<showInStore>true</showInStore>
+		<vertexBufferMemoryUsage>8192</vertexBufferMemoryUsage>
+		<indexBufferMemoryUsage>4096</indexBufferMemoryUsage>
+		<textureMemoryUsage>9439632</textureMemoryUsage>
+		<audioMemoryUsage>0</audioMemoryUsage>
+		<instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+		<instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+	</storeData>
+	<base>
+		<filename>placeables/constructionProgressDisplay/constructionProgressDisplay.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+		<canBeDeleted>true</canBeDeleted>
+		<boughtWithFarmland>false</boughtWithFarmland>
+	</base>
+	<placement useRandomYRotation="false" useManualYRotation="true">
+		<testAreas>
+			<testArea startNode="testAreaStart" endNode="testAreaEnd" />
+		</testAreas>
+		<sounds>
+			<place template="smallImp" />
+		</sounds>
+	</placement>
+	<clearAreas />
+	<leveling requireLeveling="false" />
+	<indoorAreas />
+	<tipOcclusionUpdateAreas />
+	<ai>
+		<updateAreas />
+	</ai>
+	<constructionProgressDisplay refreshIntervalMs="5000" searchNode="constructionSearchNode" searchRadius="30" paperNode="paperNode" contentNode="dynamicContentArea" progressBarsNode="progressBarsNode" reportFormNode="reportFormNode" photoNode="photoImageNode" stageBarsNode="stageBarsNode" materialBarsNode="materialBarsNode" overallProgressFillNode="overallProgressFillNode" interactionNode="interactionNode" tabsNode="documentTabsNode" />
+	<i3dMappings>
+		<i3dMapping id="constructionSearchNode" node="0>2" />
+		<i3dMapping id="interactionNode" node="0>3" />
+		<i3dMapping id="paperNode" node="0>4" />
+		<i3dMapping id="dynamicContentArea" node="0>4|2" />
+		<i3dMapping id="progressBarsNode" node="0>4|3" />
+		<i3dMapping id="overallProgressFillNode" node="0>4|3|1" />
+		<i3dMapping id="reportFormNode" node="0>4|4" />
+		<i3dMapping id="photoImageNode" node="0>4|4|0" />
+		<i3dMapping id="stageBarsNode" node="0>4|3|2" />
+		<i3dMapping id="materialBarsNode" node="0>4|3|3" />
+		<i3dMapping id="testAreaStart" node="0>5" />
+		<i3dMapping id="testAreaEnd" node="0>5|0" />
+		<i3dMapping id="documentTabsNode" node="0>4|5" />
+	</i3dMappings>
+</placeable>

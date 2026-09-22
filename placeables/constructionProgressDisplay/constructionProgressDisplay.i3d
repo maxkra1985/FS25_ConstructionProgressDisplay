@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="constructionProgressDisplay.i3d" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13" />
+  </Asset>
+  <Files>
+    <File fileId="1" filename="textures/wood_horizontal.dds" />
+    <File fileId="2" filename="textures/wood_horizontal_normal.dds" />
+    <File fileId="3" filename="textures/wood_gloss.dds" />
+    <File fileId="4" filename="textures/wood_vertical.dds" />
+    <File fileId="5" filename="textures/wood_vertical_normal.dds" />
+    <File fileId="6" filename="textures/wood_vertical_gloss.dds" />
+    <File fileId="7" filename="textures/board_painted.dds" />
+    <File fileId="8" filename="textures/board_painted_normal.dds" />
+    <File fileId="9" filename="textures/board_painted_gloss.dds" />
+    <File fileId="10" filename="textures/paper.dds" />
+    <File fileId="11" filename="textures/paper_normal.dds" />
+    <File fileId="12" filename="textures/paper_gloss.dds" />
+    <File fileId="13" filename="textures/galvanized.dds" />
+    <File fileId="14" filename="textures/galvanized_normal.dds" />
+    <File fileId="15" filename="textures/galvanized_gloss.dds" />
+    <File fileId="16" filename="textures/concrete.dds" />
+    <File fileId="17" filename="textures/concrete_normal.dds" />
+    <File fileId="18" filename="textures/concrete_gloss.dds" />
+    <File fileId="19" filename="textures/photo_placeholder.dds" />
+  </Files>
+  <Materials>
+    <Material name="woodHorizontal" materialId="5">
+      <Texture fileId="1" />
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+    </Material>
+    <Material name="woodVertical" materialId="6">
+      <Texture fileId="4" />
+      <Normalmap fileId="5" />
+      <Glossmap fileId="6" />
+    </Material>
+    <Material name="boardPainted" materialId="7">
+      <Texture fileId="7" />
+      <Normalmap fileId="8" />
+      <Glossmap fileId="9" />
+    </Material>
+    <Material name="paper" materialId="8">
+      <Texture fileId="10" />
+      <Normalmap fileId="11" />
+      <Glossmap fileId="12" />
+    </Material>
+    <Material name="galvanizedSteel" materialId="9" specularColor="0.55 0.58 0.58">
+      <Texture fileId="13" />
+      <Normalmap fileId="14" />
+      <Glossmap fileId="15" />
+    </Material>
+    <Material name="concrete" materialId="10">
+      <Texture fileId="16" />
+      <Normalmap fileId="17" />
+      <Glossmap fileId="18" />
+    </Material>
+    <Material name="paperShadow" materialId="11" diffuseColor="0.035 0.040 0.037 1" />
+    <Material name="collision" materialId="12" diffuseColor="0 1 0 0.15" />
+    <Material name="progressTrack" materialId="13" diffuseColor="0.70 0.70 0.66 1" />
+    <Material name="progressFill" materialId="14" diffuseColor="0.07 0.18 0.30 1" />
+    <Material name="reportInk" materialId="15" diffuseColor="0.055 0.060 0.055 1" />
+    <Material name="reportHeaderShade" materialId="16" diffuseColor="0.80 0.80 0.76 1" />
+    <Material name="photoDynamic" materialId="17" diffuseColor="1 1 1 1">
+      <Texture fileId="19" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="constructionProgressDisplay.i3d.shapes">
+    <IndexedTriangleSet name="boltCylinder" shapeId="2">
+      <Vertices count="70" normal="true" uv0="true">
+        <v p="0.500000 0.000000 -0.500000" n="1.000000 0.000000 0.000000" t0="0.000000 0.000000" />
+        <v p="0.500000 0.000000 0.500000" n="1.000000 0.000000 0.000000" t0="0.000000 1.000000" />
+        <v p="0.461940 0.191342 -0.500000" n="0.923880 0.382683 0.000000" t0="0.062500 0.000000" />
+        <v p="0.461940 0.191342 0.500000" n="0.923880 0.382683 0.000000" t0="0.062500 1.000000" />
+        <v p="0.353553 0.353553 -0.500000" n="0.707107 0.707107 0.000000" t0="0.125000 0.000000" />
+        <v p="0.353553 0.353553 0.500000" n="0.707107 0.707107 0.000000" t0="0.125000 1.000000" />
+        <v p="0.191342 0.461940 -0.500000" n="0.382683 0.923880 0.000000" t0="0.187500 0.000000" />
+        <v p="0.191342 0.461940 0.500000" n="0.382683 0.923880 0.000000" t0="0.187500 1.000000" />
+        <v p="0.000000 0.500000 -0.500000" n="0.000000 1.000000 0.000000" t0="0.250000 0.000000" />
+        <v p="0.000000 0.500000 0.500000" n="0.000000 1.000000 0.000000" t0="0.250000 1.000000" />
+        <v p="-0.191342 0.461940 -0.500000" n="-0.382683 0.923880 0.000000" t0="0.312500 0.000000" />
+        <v p="-0.191342 0.461940 0.500000" n="-0.382683 0.923880 0.000000" t0="0.312500 1.000000" />
+        <v p="-0.353553 0.353553 -0.500000" n="-0.707107 0.707107 0.000000" t0="0.375000 0.000000" />
+        <v p="-0.353553 0.353553 0.500000" n="-0.707107 0.707107 0.000000" t0="0.375000 1.000000" />
+        <v p="-0.461940 0.191342 -0.500000" n="-0.923880 0.382683 0.000000" t0="0.437500 0.000000" />
+        <v p="-0.461940 0.191342 0.500000" n="-0.923880 0.382683 0.000000" t0="0.437500 1.000000" />
+        <v p="-0.500000 0.000000 -0.500000" n="-1.000000 0.000000 0.000000" t0="0.500000 0.000000" />
+        <v p="-0.500000 0.000000 0.500000" n="-1.000000 0.000000 0.000000" t0="0.500000 1.000000" />
+        <v p="-0.461940 -0.191342 -0.500000" n="-0.923880 -0.382683 0.000000" t0="0.562500 0.000000" />
+        <v p="-0.461940 -0.191342 0.500000" n="-0.923880 -0.382683 0.000000" t0="0.562500 1.000000" />
+        <v p="-0.353553 -0.353553 -0.500000" n="-0.707107 -0.707107 0.000000" t0="0.625000 0.000000" />
+        <v p="-0.353553 -0.353553 0.500000" n="-0.707107 -0.707107 0.000000" t0="0.625000 1.000000" />
+        <v p="-0.191342 -0.461940 -0.500000" n="-0.382683 -0.923880 0.000000" t0="0.687500 0.000000" />
+        <v p="-0.191342 -0.461940 0.500000" n="-0.382683 -0.923880 0.000000" t0="0.687500 1.000000" />
+        <v p="-0.000000 -0.500000 -0.500000" n="-0.000000 -1.000000 0.000000" t0="0.750000 0.000000" />
+        <v p="-0.000000 -0.500000 0.500000" n="-0.000000 -1.000000 0.000000" t0="0.750000 1.000000" />
+        <v p="0.191342 -0.461940 -0.500000" n="0.382683 -0.923880 0.000000" t0="0.812500 0.000000" />
+        <v p="0.191342 -0.461940 0.500000" n="0.382683 -0.923880 0.000000" t0="0.812500 1.000000" />
+        <v p="0.353553 -0.353553 -0.500000" n="0.707107 -0.707107 0.000000" t0="0.875000 0.000000" />
+        <v p="0.353553 -0.353553 0.500000" n="0.707107 -0.707107 0.000000" t0="0.875000 1.000000" />
+        <v p="0.461940 -0.191342 -0.500000" n="0.923880 -0.382683 0.000000" t0="0.937500 0.000000" />
+        <v p="0.461940 -0.191342 0.500000" n="0.923880 -0.382683 0.000000" t0="0.937500 1.000000" />
+        <v p="0.500000 -0.000000 -0.500000" n="1.000000 -0.000000 0.000000" t0="1.000000 0.000000" />
+        <v p="0.500000 -0.000000 0.500000" n="1.000000 -0.000000 0.000000" t0="1.000000 1.000000" />
+        <v p="0.000000 0.000000 0.500000" n="0.000000 0.000000 1.000000" t0="0.500000 0.500000" />
+        <v p="0.500000 0.000000 0.500000" n="0.000000 0.000000 1.000000" t0="1.000000 0.500000" />
+        <v p="0.461940 0.191342 0.500000" n="0.000000 0.000000 1.000000" t0="0.961940 0.691342" />
+        <v p="0.353553 0.353553 0.500000" n="0.000000 0.000000 1.000000" t0="0.853553 0.853553" />
+        <v p="0.191342 0.461940 0.500000" n="0.000000 0.000000 1.000000" t0="0.691342 0.961940" />
+        <v p="0.000000 0.500000 0.500000" n="0.000000 0.000000 1.000000" t0="0.500000 1.000000" />
+        <v p="-0.191342 0.461940 0.500000" n="0.000000 0.000000 1.000000" t0="0.308658 0.961940" />
+        <v p="-0.353553 0.353553 0.500000" n="0.000000 0.000000 1.000000" t0="0.146447 0.853553" />
+        <v p="-0.461940 0.191342 0.500000" n="0.000000 0.000000 1.000000" t0="0.038060 0.691342" />
+        <v p="-0.500000 0.000000 0.500000" n="0.000000 0.000000 1.000000" t0="0.000000 0.500000" />
+        <v p="-0.461940 -0.191342 0.500000" n="0.000000 0.000000 1.000000" t0="0.038060 0.308658" />
+        <v p="-0.353553 -0.353553 0.500000" n="0.000000 0.000000 1.000000" t0="0.146447 0.146447" />
+        <v p="-0.191342 -0.461940 0.500000" n="0.000000 0.000000 1.000000" t0="0.308658 0.038060" />
+        <v p="-0.000000 -0.500000 0.500000" n="0.000000 0.000000 1.000000" t0="0.500000 0.000000" />
+        <v p="0.191342 -0.461940 0.500000" n="0.000000 0.000000 1.000000" t0="0.691342 0.038060" />
+        <v p="0.353553 -0.353553 0.500000" n="0.000000 0.000000 1.000000" t0="0.853553 0.146447" />
+        <v p="0.461940 -0.191342 0.500000" n="0.000000 0.000000 1.000000" t0="0.961940 0.308658" />
+        <v p="0.500000 -0.000000 0.500000" n="0.000000 0.000000 1.000000" t0="1.000000 0.500000" />
+        <v p="0.000000 0.000000 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.500000 0.500000" />
+        <v p="0.500000 0.000000 -0.500000" n="0.000000 0.000000 -1.000000" t0="1.000000 0.500000" />
+        <v p="0.461940 0.191342 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.961940 0.308658" />
+        <v p="0.353553 0.353553 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.853553 0.146447" />
+        <v p="0.191342 0.461940 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.691342 0.038060" />
+        <v p="0.000000 0.500000 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.500000 0.000000" />
+        <v p="-0.191342 0.461940 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.308658 0.038060" />
+        <v p="-0.353553 0.353553 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.146447 0.146447" />
+        <v p="-0.461940 0.191342 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.038060 0.308658" />
+        <v p="-0.500000 0.000000 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.000000 0.500000" />
+        <v p="-0.461940 -0.191342 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.038060 0.691342" />
+        <v p="-0.353553 -0.353553 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.146447 0.853553" />
+        <v p="-0.191342 -0.461940 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.308658 0.961940" />
+        <v p="-0.000000 -0.500000 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.500000 1.000000" />
+        <v p="0.191342 -0.461940 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.691342 0.961940" />
+        <v p="0.353553 -0.353553 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.853553 0.853553" />
+        <v p="0.461940 -0.191342 -0.500000" n="0.000000 0.000000 -1.000000" t0="0.961940 0.691342" />
+        <v p="0.500000 -0.000000 -0.500000" n="0.000000 0.000000 -1.000000" t0="1.000000 0.500000" />
+      </Vertices>
+      <Triangles count="64">
+        <t vi="0 1 3" />
+        <t vi="0 3 2" />
+        <t vi="2 3 5" />
+        <t vi="2 5 4" />
+        <t vi="4 5 7" />
+        <t vi="4 7 6" />
+        <t vi="6 7 9" />
+        <t vi="6 9 8" />
+        <t vi="8 9 11" />
+        <t vi="8 11 10" />
+        <t vi="10 11 13" />
+        <t vi="10 13 12" />
+        <t vi="12 13 15" />
+        <t vi="12 15 14" />
+        <t vi="14 15 17" />
+        <t vi="14 17 16" />
+        <t vi="16 17 19" />
+        <t vi="16 19 18" />
+        <t vi="18 19 21" />
+        <t vi="18 21 20" />
+        <t vi="20 21 23" />
+        <t vi="20 23 22" />
+        <t vi="22 23 25" />
+        <t vi="22 25 24" />
+        <t vi="24 25 27" />
+        <t vi="24 27 26" />
+        <t vi="26 27 29" />
+        <t vi="26 29 28" />
+        <t vi="28 29 31" />
+        <t vi="28 31 30" />
+        <t vi="30 31 33" />
+        <t vi="30 33 32" />
+        <t vi="34 35 36" />
+        <t vi="34 36 37" />
+        <t vi="34 37 38" />
+        <t vi="34 38 39" />
+        <t vi="34 39 40" />
+        <t vi="34 40 41" />
+        <t vi="34 41 42" />
+        <t vi="34 42 43" />
+        <t vi="34 43 44" />
+        <t vi="34 44 45" />
+        <t vi="34 45 46" />
+        <t vi="34 46 47" />
+        <t vi="34 47 48" />
+        <t vi="34 48 49" />
+        <t vi="34 49 50" />
+        <t vi="34 50 51" />
+        <t vi="52 54 53" />
+        <t vi="52 55 54" />
+        <t vi="52 56 55" />
+        <t vi="52 57 56" />
+        <t vi="52 58 57" />
+        <t vi="52 59 58" />
+        <t vi="52 60 59" />
+        <t vi="52 61 60" />
+        <t vi="52 62 61" />
+        <t vi="52 63 62" />
+        <t vi="52 64 63" />
+        <t vi="52 65 64" />
+        <t vi="52 66 65" />
+        <t vi="52 67 66" />
+        <t vi="52 68 67" />
+        <t vi="52 69 68" />
+      </Triangles>
+      <Subsets count="1">
+        <Subset firstVertex="0" numVertices="70" firstIndex="0" numIndices="192" />
+      </Subsets>
+    </IndexedTriangleSet>
+  </Shapes>
+  <Scene>
+    <TransformGroup name="constructionProgressDisplay" nodeId="12">
+      <TransformGroup name="visual" nodeId="13">
+        <TransformGroup name="structure" nodeId="200">
+          <Shape name="leftConcreteFooting" translation="-1.05 0.02 -0.11" scale="0.34 0.12 0.34" shapeId="1" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="10" />
+          <Shape name="rightConcreteFooting" translation="1.05 0.02 -0.11" scale="0.34 0.12 0.34" shapeId="1" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="10" />
+          <Shape name="leftBasePlate" translation="-1.05 0.09 -0.11" scale="0.28 0.03 0.28" shapeId="1" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="rightBasePlate" translation="1.05 0.09 -0.11" scale="0.28 0.03 0.28" shapeId="1" nodeId="17" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="leftPost" translation="-1.05 1.30 -0.11" scale="0.10 2.44 0.10" shapeId="1" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="6" />
+          <Shape name="rightPost" translation="1.05 1.30 -0.11" scale="0.10 2.44 0.10" shapeId="1" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="6" />
+          <Shape name="leftPostShoe" translation="-1.05 0.24 -0.11" scale="0.14 0.34 0.14" shapeId="1" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="rightPostShoe" translation="1.05 0.24 -0.11" scale="0.14 0.34 0.14" shapeId="1" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="rearCrossbar" translation="0 1.28 -0.145" scale="2.20 0.08 0.08" shapeId="1" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="5" />
+          <Shape name="rearBraceLeft" translation="-0.73 1.43 -0.15" scale="0.07 1.00 0.07" rotation="0 0 -41" shapeId="1" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="6" />
+          <Shape name="rearBraceRight" translation="0.73 1.43 -0.15" scale="0.07 1.00 0.07" rotation="0 0 41" shapeId="1" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="6" />
+          <Shape name="anchorBoltL1" translation="-1.140 0.115 -0.200" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltL2" translation="-0.960 0.115 -0.200" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltL3" translation="-1.140 0.115 -0.020" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltL4" translation="-0.960 0.115 -0.020" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltR1" translation="0.960 0.115 -0.200" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltR2" translation="1.140 0.115 -0.200" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltR3" translation="0.960 0.115 -0.020" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="anchorBoltR4" translation="1.140 0.115 -0.020" scale="0.026 0.026 0.018" rotation="90 0 0" shapeId="2" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="9" />
+        </TransformGroup>
+        <TransformGroup name="boardAssembly" nodeId="201">
+          <Shape name="backingBoard" translation="0 1.74 -0.02" scale="2.90 1.52 0.06" shapeId="1" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="7" />
+          <Shape name="topFrame" translation="0 2.54 0.025" scale="3.04 0.09 0.13" shapeId="1" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="5" />
+          <Shape name="bottomFrame" translation="0 0.94 0.025" scale="3.04 0.09 0.13" shapeId="1" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="5" />
+          <Shape name="leftFrame" translation="-1.475 1.74 0.025" scale="0.09 1.52 0.13" shapeId="1" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6" />
+          <Shape name="rightFrame" translation="1.475 1.74 0.025" scale="0.09 1.52 0.13" shapeId="1" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="6" />
+          <Shape name="rainCap" translation="0 2.615 -0.005" scale="3.14 0.035 0.18" shapeId="1" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="rainCapFrontLip" translation="0 2.590 0.090" scale="3.14 0.05 0.025" shapeId="1" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperRailTop" translation="0 2.405 0.052" scale="2.72 0.025 0.025" shapeId="1" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperRailBottom" translation="0 1.075 0.052" scale="2.72 0.025 0.025" shapeId="1" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperRailLeft" translation="-1.335 1.74 0.052" scale="0.025 1.35 0.025" shapeId="1" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperRailRight" translation="1.335 1.74 0.052" scale="0.025 1.35 0.025" shapeId="1" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="9" />
+        </TransformGroup>
+        <TransformGroup name="hardwareDetails" nodeId="202">
+          <Shape name="paperClipTL" translation="-1.180 2.310 0.105" scale="0.14 0.060 0.030" rotation="0 0 -2" shapeId="1" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipScrewTL" translation="-1.180 2.310 0.128" scale="0.032 0.032 0.018" shapeId="2" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipTR" translation="1.180 2.310 0.105" scale="0.14 0.060 0.030" rotation="0 0 2" shapeId="1" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipScrewTR" translation="1.180 2.310 0.128" scale="0.032 0.032 0.018" shapeId="2" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipBL" translation="-1.180 1.170 0.105" scale="0.14 0.060 0.030" rotation="0 0 2" shapeId="1" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipScrewBL" translation="-1.180 1.170 0.128" scale="0.032 0.032 0.018" shapeId="2" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipBR" translation="1.180 1.170 0.105" scale="0.14 0.060 0.030" rotation="0 0 -2" shapeId="1" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="paperClipScrewBR" translation="1.180 1.170 0.128" scale="0.032 0.032 0.018" shapeId="2" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew1" translation="-1.440 2.530 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew2" translation="1.440 2.530 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew3" translation="-1.440 0.950 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew4" translation="1.440 0.950 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew5" translation="-0.720 2.550 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew6" translation="0.720 2.550 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew7" translation="-0.720 0.930 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="frameScrew8" translation="0.720 0.930 0.103" scale="0.025 0.025 0.014" shapeId="2" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="rearBracketLeft" translation="-1.05 2.15 -0.135" scale="0.18 0.26 0.025" shapeId="1" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="9" />
+          <Shape name="rearBracketRight" translation="1.05 2.15 -0.135" scale="0.18 0.26 0.025" shapeId="1" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="9" />
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collision" nodeId="300">
+        <Shape name="boardCollision" translation="0 1.74 -0.02" scale="3.04 1.70 0.14" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nonRenderable="true" nodeId="62" castsShadows="false" receiveShadows="false" materialIds="12" />
+        <Shape name="leftPostCollision" translation="-1.05 0.50 -0.11" scale="0.14 0.90 0.14" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nonRenderable="true" nodeId="63" castsShadows="false" receiveShadows="false" materialIds="12" />
+        <Shape name="rightPostCollision" translation="1.05 0.50 -0.11" scale="0.14 0.90 0.14" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nonRenderable="true" nodeId="64" castsShadows="false" receiveShadows="false" materialIds="12" />
+      </TransformGroup>
+      <TransformGroup name="constructionSearchNode" nodeId="400" />
+      <TransformGroup name="interactionNode" translation="0 1.45 1.10" nodeId="401" />
+      <TransformGroup name="paperNode" translation="0 1.74 0.078" nodeId="402">
+        <Shape name="paperShadow" translation="0 -0.006 -0.012" scale="2.64 1.28 0.010" shapeId="1" nodeId="403" castsShadows="false" receiveShadows="true" materialIds="11" />
+        <Shape name="staticPaperBackground" scale="2.60 1.24 0.006" shapeId="1" nodeId="404" castsShadows="false" receiveShadows="true" materialIds="8" />
+        <TransformGroup name="dynamicContentArea" translation="0 0 0.014" nodeId="405" />
+        <TransformGroup name="progressBars" nodeId="408">
+          <Shape name="overallProgressTrack" translation="0.780 0.065 0.004" scale="0.820 0.025 0.004" shapeId="1" nodeId="409" castsShadows="false" receiveShadows="false" materialIds="13" />
+          <Shape name="overallProgressFill" translation="0.371 0.065 0.008" scale="0.001 0.025 0.004" shapeId="1" nodeId="410" castsShadows="false" receiveShadows="false" materialIds="14" />
+          <TransformGroup name="stageBars" nodeId="440">
+            <TransformGroup name="stageBar1" translation="-1.160 0.020 0" nodeId="441">
+              <Shape name="track" translation="0.455 -0.028 0.004" scale="0.910 0.014 0.004" shapeId="1" nodeId="442" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.028 0.008" scale="0.001 0.014 0.004" shapeId="1" nodeId="443" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="stageBar2" translation="-1.160 -0.070 0" nodeId="444">
+              <Shape name="track" translation="0.455 -0.028 0.004" scale="0.910 0.014 0.004" shapeId="1" nodeId="445" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.028 0.008" scale="0.001 0.014 0.004" shapeId="1" nodeId="446" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="stageBar3" translation="-1.160 -0.160 0" nodeId="447">
+              <Shape name="track" translation="0.455 -0.028 0.004" scale="0.910 0.014 0.004" shapeId="1" nodeId="448" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.028 0.008" scale="0.001 0.014 0.004" shapeId="1" nodeId="449" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="stageBar4" translation="-1.160 -0.250 0" nodeId="450">
+              <Shape name="track" translation="0.455 -0.028 0.004" scale="0.910 0.014 0.004" shapeId="1" nodeId="451" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.028 0.008" scale="0.001 0.014 0.004" shapeId="1" nodeId="452" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="stageBar5" translation="-1.160 -0.340 0" nodeId="453">
+              <Shape name="track" translation="0.455 -0.028 0.004" scale="0.910 0.014 0.004" shapeId="1" nodeId="454" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.028 0.008" scale="0.001 0.014 0.004" shapeId="1" nodeId="455" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="stageBar6" translation="-1.160 -0.430 0" nodeId="456">
+              <Shape name="track" translation="0.455 -0.028 0.004" scale="0.910 0.014 0.004" shapeId="1" nodeId="457" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.028 0.008" scale="0.001 0.014 0.004" shapeId="1" nodeId="458" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="materialBars" nodeId="470">
+            <TransformGroup name="materialBar1" translation="0.200 -0.112 0" nodeId="471">
+              <Shape name="track" translation="0.490 -0.025 0.004" scale="0.980 0.012 0.004" shapeId="1" nodeId="472" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.025 0.008" scale="0.001 0.012 0.004" shapeId="1" nodeId="473" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="materialBar2" translation="0.200 -0.188 0" nodeId="474">
+              <Shape name="track" translation="0.490 -0.025 0.004" scale="0.980 0.012 0.004" shapeId="1" nodeId="475" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.025 0.008" scale="0.001 0.012 0.004" shapeId="1" nodeId="476" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="materialBar3" translation="0.200 -0.264 0" nodeId="477">
+              <Shape name="track" translation="0.490 -0.025 0.004" scale="0.980 0.012 0.004" shapeId="1" nodeId="478" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.025 0.008" scale="0.001 0.012 0.004" shapeId="1" nodeId="479" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="materialBar4" translation="0.200 -0.340 0" nodeId="480">
+              <Shape name="track" translation="0.490 -0.025 0.004" scale="0.980 0.012 0.004" shapeId="1" nodeId="481" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.025 0.008" scale="0.001 0.012 0.004" shapeId="1" nodeId="482" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+            <TransformGroup name="materialBar5" translation="0.200 -0.416 0" nodeId="483">
+              <Shape name="track" translation="0.490 -0.025 0.004" scale="0.980 0.012 0.004" shapeId="1" nodeId="484" castsShadows="false" receiveShadows="false" materialIds="13" />
+              <Shape name="fill" translation="0.000 -0.025 0.008" scale="0.001 0.012 0.004" shapeId="1" nodeId="485" castsShadows="false" receiveShadows="false" materialIds="14" />
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="reportForm" nodeId="500">
+          <Shape name="photoShade" translation="1.020 0.335 0.004" scale="0.340 0.340 0.003" shapeId="1" nodeId="501" castsShadows="false" receiveShadows="false" materialIds="17" />
+          <Shape name="stagesHeader" translation="-0.685 0.126 0.006" scale="1.080 0.050 0.004" shapeId="1" nodeId="502" castsShadows="false" receiveShadows="false" materialIds="14" />
+          <Shape name="materialsHeader" translation="0.550 0.126 0.006" scale="1.330 0.050 0.004" shapeId="1" nodeId="504" castsShadows="false" receiveShadows="false" materialIds="14" />
+          <Shape name="stagesPanelTop" translation="-0.685 0.101 0.008" scale="1.080 0.0025 0.0025" shapeId="1" nodeId="510" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="stagesPanelBottom" translation="-0.685 -0.267 0.008" scale="1.080 0.0025 0.0025" shapeId="1" nodeId="511" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="stagesPanelLeft" translation="-1.225 -0.0830 0.008" scale="0.0025 0.368 0.0025" shapeId="1" nodeId="512" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="stagesPanelRight" translation="-0.145 -0.0830 0.008" scale="0.0025 0.368 0.0025" shapeId="1" nodeId="513" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsPanelTop" translation="0.550 0.101 0.008" scale="1.330 0.0025 0.0025" shapeId="1" nodeId="518" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsPanelBottom" translation="0.550 -0.325 0.008" scale="1.330 0.0025 0.0025" shapeId="1" nodeId="519" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsPanelLeft" translation="-0.115 -0.1120 0.008" scale="0.0025 0.426 0.0025" shapeId="1" nodeId="520" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsPanelRight" translation="1.215 -0.1120 0.008" scale="0.0025 0.426 0.0025" shapeId="1" nodeId="521" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="photoPanelTop" translation="1.020 0.505 0.008" scale="0.340 0.0025 0.0025" shapeId="1" nodeId="522" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="photoPanelBottom" translation="1.020 0.165 0.008" scale="0.340 0.0025 0.0025" shapeId="1" nodeId="523" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="photoPanelLeft" translation="0.850 0.335 0.008" scale="0.0025 0.340 0.0025" shapeId="1" nodeId="524" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="photoPanelRight" translation="1.190 0.335 0.008" scale="0.0025 0.340 0.0025" shapeId="1" nodeId="525" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableHeaderLine" translation="0.550 0.065 0.008" scale="1.330 0.0020 0.0025" shapeId="1" nodeId="528" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine1" translation="0.550 0.035 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="529" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine2" translation="0.550 0.005 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="530" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine3" translation="0.550 -0.025 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="531" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine4" translation="0.550 -0.055 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="532" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine5" translation="0.550 -0.085 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="533" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine6" translation="0.550 -0.115 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="534" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableColumn1" translation="0.480 -0.1120 0.008" scale="0.0015 0.426 0.0025" shapeId="1" nodeId="535" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableColumn2" translation="0.630 -0.1120 0.008" scale="0.0015 0.426 0.0025" shapeId="1" nodeId="536" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableColumn3" translation="0.770 -0.1120 0.008" scale="0.0015 0.426 0.0025" shapeId="1" nodeId="537" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableColumn4" translation="0.910 -0.1120 0.008" scale="0.0015 0.426 0.0025" shapeId="1" nodeId="538" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableColumn5" translation="1.060 -0.1120 0.008" scale="0.0015 0.426 0.0025" shapeId="1" nodeId="539" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine7" translation="0.550 -0.145 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="559" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine8" translation="0.550 -0.175 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="560" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine9" translation="0.550 -0.205 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="561" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine10" translation="0.550 -0.235 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="562" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine11" translation="0.550 -0.265 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="563" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine12" translation="0.550 -0.295 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="564" castsShadows="false" receiveShadows="false" materialIds="15" />
+          <Shape name="materialsTableRowLine13" translation="0.550 -0.325 0.008" scale="1.330 0.0015 0.0025" shapeId="1" nodeId="565" castsShadows="false" receiveShadows="false" materialIds="15" />
+        </TransformGroup>
+        <TransformGroup name="documentTabs" nodeId="540">
+          <TransformGroup name="documentTab1" translation="-0.780 0.545 0" nodeId="541">
+            <Shape name="base" translation="0 0 0.010" scale="0.270 0.060 0.004" shapeId="1" nodeId="542" castsShadows="false" receiveShadows="false" materialIds="16" />
+            <Shape name="active" translation="0 0 0.016" scale="0.270 0.060 0.004" shapeId="1" nodeId="543" castsShadows="false" receiveShadows="false" materialIds="14" />
+          </TransformGroup>
+          <TransformGroup name="documentTab2" translation="-0.470 0.545 0" nodeId="544">
+            <Shape name="base" translation="0 0 0.010" scale="0.270 0.060 0.004" shapeId="1" nodeId="545" castsShadows="false" receiveShadows="false" materialIds="16" />
+            <Shape name="active" translation="0 0 0.016" scale="0.270 0.060 0.004" shapeId="1" nodeId="546" castsShadows="false" receiveShadows="false" materialIds="14" />
+          </TransformGroup>
+          <TransformGroup name="documentTab3" translation="-0.160 0.545 0" nodeId="547">
+            <Shape name="base" translation="0 0 0.010" scale="0.270 0.060 0.004" shapeId="1" nodeId="548" castsShadows="false" receiveShadows="false" materialIds="16" />
+            <Shape name="active" translation="0 0 0.016" scale="0.270 0.060 0.004" shapeId="1" nodeId="549" castsShadows="false" receiveShadows="false" materialIds="14" />
+          </TransformGroup>
+          <TransformGroup name="documentTab4" translation="0.150 0.545 0" nodeId="550">
+            <Shape name="base" translation="0 0 0.010" scale="0.270 0.060 0.004" shapeId="1" nodeId="551" castsShadows="false" receiveShadows="false" materialIds="16" />
+            <Shape name="active" translation="0 0 0.016" scale="0.270 0.060 0.004" shapeId="1" nodeId="552" castsShadows="false" receiveShadows="false" materialIds="14" />
+          </TransformGroup>
+          <TransformGroup name="documentTab5" translation="0.460 0.545 0" nodeId="553">
+            <Shape name="base" translation="0 0 0.010" scale="0.270 0.060 0.004" shapeId="1" nodeId="554" castsShadows="false" receiveShadows="false" materialIds="16" />
+            <Shape name="active" translation="0 0 0.016" scale="0.270 0.060 0.004" shapeId="1" nodeId="555" castsShadows="false" receiveShadows="false" materialIds="14" />
+          </TransformGroup>
+          <TransformGroup name="documentTab6" translation="0.770 0.545 0" nodeId="556">
+            <Shape name="base" translation="0 0 0.010" scale="0.270 0.060 0.004" shapeId="1" nodeId="557" castsShadows="false" receiveShadows="false" materialIds="16" />
+            <Shape name="active" translation="0 0 0.016" scale="0.270 0.060 0.004" shapeId="1" nodeId="558" castsShadows="false" receiveShadows="false" materialIds="14" />
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreaStart" translation="-1.60 0 -0.45" nodeId="406">
+        <TransformGroup name="testAreaEnd" translation="3.20 0.25 0.90" nodeId="407" />
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+</i3D>
